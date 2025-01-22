@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "allowJs": true,
+    "baseUrl": ".",
     "declaration": true,
     "jsx": "react-jsx",
     "lib": ["es6", "dom", "DOM.Iterable"],
@@ -10,6 +11,9 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "outDir": ".",
+    "paths": {
+      "@/*": ["./*"]
+    },
     "rootDir": ".",
     "skipLibCheck": true,
     "sourceMap": true,
