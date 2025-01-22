@@ -34,14 +34,26 @@
     "typescript": "^5.7.3"
   },
   "scripts": {
-    "build": "run-s build:storybook build:tailwind build:typescript",
+    "build": "run-s build:tailwind build:storybook build:typescript",
     "build:storybook": "storybook build",
     "build:tailwind": "tailwindcss -i tailwind.css -o dist.css",
-    "build:typescript": "tsc",
+    "build:typescript": "tsc --project tsconfig.publish.json",
+    "clean": "run-s clean:storybook clean:tailwind clean:typescript",
+    "clean:storybook": "rm -rf storybook-static",
+    "clean:tailwind": "rm -f dist.css",
+    "clean:typescript": "rm -rf *.d.ts *.js *.js.map",
     "start": "run-p start:storybook start:tailwind",
     "start:storybook": "storybook dev -p 6006",
     "start:tailwind": "tailwindcss -i tailwind.css -o dist.css -w"
   },
   "type": "module",
-  "version": "0.0.3"
+  "version": "0.0.4",
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.1.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.473.0",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7"
+  }
 }
