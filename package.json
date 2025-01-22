@@ -37,5 +37,6 @@
     "start:storybook": "storybook dev -p 6006",
     "start:tailwind": "tailwindcss -i tailwind.css -o dist.css -w"
   },
-  "version": "0.0.0"
+  "type": "module",
+  "version": "0.0.1"
 }
