@@ -144,3 +144,8 @@ _site/
 
 ## Tailwind
 dist.css
+
+## tsc
+*.d.ts
+*.js
+*.js.map

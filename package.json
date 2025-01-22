@@ -20,7 +20,9 @@
     "vite": "^6.0.11"
   },
   "files": [
-    "ExampleComponent.tsx"
+    "*.d.ts",
+    "*.js",
+    "*.js.map"
   ],
   "license": "MIT",
   "name": "@arbetsmarknad/components",
@@ -38,5 +40,5 @@
     "start:tailwind": "tailwindcss -i tailwind.css -o dist.css -w"
   },
   "type": "module",
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
