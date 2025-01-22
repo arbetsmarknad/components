@@ -1,0 +1,16 @@
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          access: public
+          registry: https://registry.npmjs.org/
+          token: ${{ secrets.NPM_TOKEN }}
