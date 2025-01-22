@@ -141,6 +141,7 @@ _site/
 
 ## Storybook
 *storybook.log
+/storybook-static/
 
 ## Tailwind
 dist.css

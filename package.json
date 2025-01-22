@@ -22,7 +22,8 @@
   "files": [
     "*.d.ts",
     "*.js",
-    "*.js.map"
+    "*.js.map",
+    "dist.css"
   ],
   "license": "MIT",
   "name": "@arbetsmarknad/components",
@@ -33,12 +34,14 @@
     "typescript": "^5.7.3"
   },
   "scripts": {
+    "build": "run-s build:storybook build:tailwind build:typescript",
     "build:storybook": "storybook build",
     "build:tailwind": "tailwindcss -i tailwind.css -o dist.css",
+    "build:typescript": "tsc",
     "start": "run-p start:storybook start:tailwind",
     "start:storybook": "storybook dev -p 6006",
     "start:tailwind": "tailwindcss -i tailwind.css -o dist.css -w"
   },
   "type": "module",
-  "version": "0.0.2"
+  "version": "0.0.3"
 }
