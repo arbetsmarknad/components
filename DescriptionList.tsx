@@ -1,14 +1,19 @@
 import * as React from "react";
 import { FC, ReactElement } from "react";
+import { cn } from "./utils";
 
 export type DescriptionListProps = {
   children:
     | ReactElement<DescriptionItemProps>
     | ReactElement<DescriptionItemProps>[];
+  className?: string;
 };
 
-export const DescriptionList: FC<DescriptionListProps> = ({ children }) => {
-  return <dl className="grid grid-cols-1">{children}</dl>;
+export const DescriptionList: FC<DescriptionListProps> = ({
+  children,
+  className,
+}) => {
+  return <dl className={cn(className)}>{children}</dl>;
 };
 
 export type DescriptionItemProps = {
@@ -23,18 +28,24 @@ export const DescriptionItem: FC<DescriptionItemProps> = ({ children }) => {
 
 export type DescriptionTermProps = {
   children: ReactElement | ReactElement[] | string;
+  className?: string;
 };
 
-export const DescriptionTerm: FC<DescriptionTermProps> = ({ children }) => {
-  return <dt>{children}</dt>;
+export const DescriptionTerm: FC<DescriptionTermProps> = ({
+  children,
+  className,
+}) => {
+  return <dt className={cn(className)}>{children}</dt>;
 };
 
 export type DescriptionDetailsProps = {
   children: ReactElement | ReactElement[] | string;
+  className?: string;
 };
 
 export const DescriptionDetails: FC<DescriptionDetailsProps> = ({
   children,
+  className,
 }) => {
-  return <dd>{children}</dd>;
+  return <dd className={cn(className)}>{children}</dd>;
 };
