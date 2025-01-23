@@ -44,7 +44,7 @@ export const LegislationItem: FC<LegislationItemProps> = ({
       />
       <div
         className={cn(
-          "grid grid-cols-[min-content_auto] grid-rows-[min-content_auto] gap-x-4 gap-y-1 relative",
+          "grid grid-cols-[min-content_auto] grid-rows-[min-content_auto] gap-x-4 gap-y-1 relative w-full h-full",
           className
         )}
       >
