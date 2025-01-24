@@ -47,5 +47,5 @@ export const DescriptionDetails: FC<DescriptionDetailsProps> = ({
   children,
   className,
 }) => {
-  return <dd className={cn(className)}>{children}</dd>;
+  return <dd className={cn("mb-4", className)}>{children}</dd>;
 };

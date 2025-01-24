@@ -47,7 +47,7 @@
     "start:tailwind": "tailwindcss -i tailwind.css -o dist.css -w"
   },
   "type": "module",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",
     "class-variance-authority": "^0.7.1",
