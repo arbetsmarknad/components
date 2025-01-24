@@ -37,19 +37,13 @@ export const LegislationItem: FC<LegislationItemProps> = ({
   className,
 }) => {
   return (
-    <li className={cn("relative group", className)}>
-      <div
-        aria-hidden
-        className="absolute -inset-2 rounded-xl opacity-0 group-hover:opacity-100 bg-slate-50 border-2 border-slate-200"
-      />
-      <div
-        className={cn(
-          "grid grid-cols-[min-content_auto] grid-rows-[min-content_auto] gap-x-4 gap-y-1 relative w-full h-full",
-          className
-        )}
-      >
-        {children}
-      </div>
+    <li
+      className={cn(
+        "group grid grid-cols-[min-content_auto] grid-rows-[min-content_auto] gap-x-4 gap-y-1 relative w-full h-full",
+        className
+      )}
+    >
+      {children}
     </li>
   );
 };
