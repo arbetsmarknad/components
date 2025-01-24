@@ -39,11 +39,15 @@ export const Default = () => (
     </LegislationTableRow>
 
     <LegislationTableRow>
-      <LegislationTableCell side="left" type="paragraph_text">
-        <p>
+      <LegislationTableCell side="left" type="paragraph_text" asChild>
+        <td
+          dangerouslySetInnerHTML={{
+            __html: `<p>
           Lagens ändamål är att förebygga ohälsa och olycksfall i arbetet samt
           att även i övrigt uppnå en god arbetsmiljö. _Lag (1994:579)._
-        </p>
+        </p>`,
+          }}
+        />
       </LegislationTableCell>
       <LegislationTableCell side="right" type="paragraph_text">
         <p>
