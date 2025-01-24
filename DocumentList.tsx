@@ -23,7 +23,16 @@ export const DocumentItem: FC<DocumentItemProps> = ({
   children,
   className,
 }) => {
-  return <li className={cn("", className)}>{children}</li>;
+  return (
+    <li
+      className={cn(
+        "grid group relative xxs:grid-cols-[64px_auto] xxs:grid-rows-[min-content_1fr]  xs:grid-rows-[1fr_1fr] xxs:gap-x-4 xxs:items-center",
+        className
+      )}
+    >
+      {children}
+    </li>
+  );
 };
 
 export type DocumentIconProps = {
@@ -35,7 +44,7 @@ export const DocumentIcon: FC<DocumentIconProps> = ({ src, className }) => {
   return (
     <div
       className={cn(
-        "aspect-[707/1000] w-16 shrink-0 border-2 border-slate-200",
+        "aspect-[707/1000] w-16 shrink-0 border-2 border-slate-200 xxs:row-span-2 group-hover:ring-2 ring-blue-200 ring-offset-1",
         className
       )}
     >
@@ -56,9 +65,23 @@ export const DocumentLink: FC<DocumentLinkProps> = ({
   children,
 }) => {
   return (
-    <a className={cn("text-blue-600 underline", className)} href={href}>
-      {children}
-    </a>
+    <>
+      <a
+        aria-hidden
+        tabIndex={-1}
+        className="absolute top-0 right-0 bottom-0 left-0"
+        href={href}
+      />
+      <a
+        className={cn(
+          "text-blue-600 underline font-bold xxs:col-start-2 xs:self-end",
+          className
+        )}
+        href={href}
+      >
+        {children}
+      </a>
+    </>
   );
 };
 
@@ -71,5 +94,14 @@ export const DocumentDescription: FC<DocumentDescriptionProps> = ({
   className,
   children,
 }) => {
-  return <div className={cn("", className)}>{children}</div>;
+  return (
+    <div
+      className={cn(
+        "xxs:col-start-2 xxs:self-start xxs:line-clamp-2 xs:line-clamp-none",
+        className
+      )}
+    >
+      {children}
+    </div>
+  );
 };
