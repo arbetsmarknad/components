@@ -1,0 +1,6 @@
+import{j as e}from"./jsx-runtime-z8MfsBtr.js";import{c as l}from"./utils-BNf5BS2b.js";import"./index-C9rmetsa.js";const t=({children:i,className:o})=>e.jsx("div",{className:l("flex w-full max-w-5xl flex-col px-4 lg:px-0",o),children:i});t.__docgenInfo={description:"",methods:[],displayName:"Container",props:{children:{required:!0,tsType:{name:"union",raw:"ReactElement | ReactElement[]",elements:[{name:"ReactElement"},{name:"Array",elements:[{name:"ReactElement"}],raw:"ReactElement[]"}]},description:""},className:{required:!1,tsType:{name:"string"},description:""}}};const p={title:"Container",component:t},n=()=>e.jsx("div",{className:"flex flex-col items-center",children:e.jsxs(t,{children:[e.jsx("div",{children:"Example 1"}),e.jsx("div",{children:"Example 2"})]})});n.__docgenInfo={description:"",methods:[],displayName:"Default"};var a,r,s;n.parameters={...n.parameters,docs:{...(a=n.parameters)==null?void 0:a.docs,source:{originalSource:`() => <div className="flex flex-col items-center">
+    <Container>
+      <div>Example 1</div>
+      <div>Example 2</div>
+    </Container>
+  </div>`,...(s=(r=n.parameters)==null?void 0:r.docs)==null?void 0:s.source}}};const x=["Default"];export{n as Default,x as __namedExportsOrder,p as default};
