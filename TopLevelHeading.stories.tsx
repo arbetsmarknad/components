@@ -12,3 +12,10 @@ export const Default = () => (
     subtext="Another Bit Of Text"
   />
 );
+
+export const VeryLongSubText = () => (
+  <TopLevelHeading
+    text="Arbetsmarknad Starter Project"
+    subtext="Ett dokumentationsnav om den svenska arbetmarknaden"
+  />
+);

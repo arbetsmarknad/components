@@ -3,20 +3,25 @@ import type { FC } from "react";
 export type TopLevelHeadingProps = {
   text: string;
   subtext?: string;
+  h1?: "both" | "textOnly";
 };
 
 export const TopLevelHeading: FC<TopLevelHeadingProps> = ({
   text,
   subtext,
+  h1 = "both",
 }) => {
+  const Root = h1 === "both" ? "h1" : "div";
+  const Text = h1 === "both" ? "span" : "h1";
+  const Subtext = "span";
   return (
-    <h1 className={`flex flex-col text-2xl font-bold md:text-3xl space-y-2`}>
-      <span className="font-normal md:font-extralight">{text}</span>
+    <Root className={`flex flex-col text-2xl font-bold md:text-3xl`}>
+      <Text className="font-normal md:font-extralight">{text}</Text>
       {subtext && (
-        <span className="leading-1 align-top text-lg font-light text-slate-500">
+        <Subtext className="align-top text-lg font-light text-slate-500">
           {subtext}
-        </span>
+        </Subtext>
       )}
-    </h1>
+    </Root>
   );
 };
