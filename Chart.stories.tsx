@@ -1,7 +1,7 @@
 import React from "react";
 import { Bar, BarChart } from "recharts";
 
-import { ChartConfig, ChartContainer } from "./chart";
+import { ChartConfig, ChartContainer } from "./Chart";
 
 const chartData = [
   { month: "January", desktop: 186, mobile: 80 },
