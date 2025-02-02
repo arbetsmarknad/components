@@ -4,7 +4,7 @@
     "baseUrl": ".",
     "declaration": true,
     "jsx": "react-jsx",
-    "lib": ["es6", "dom", "DOM.Iterable"],
+    "lib": ["ESNext", "dom", "DOM.Iterable"],
     "module": "esnext",
     "moduleResolution": "node",
     "noImplicitAny": true,
