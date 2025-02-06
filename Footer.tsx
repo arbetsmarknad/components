@@ -22,16 +22,16 @@ const links = [
 
 export const Footer: FC<{ sourceCode: string[] }> = ({ sourceCode }) => {
   return (
-    <footer className="grid place-items-center">
-      <Container className="divide-y divide-solid divide-gray-200 md:divide-none flex flex-col gap-y-8 md:flex-row md:justify-between md:items-start ">
-        <div className="text-center flex flex-col items-center gap-y-4 pb-8 md:text-left md:items-start">
-          <h2 className="text-lg">Sidan drivs av</h2>
-          <ol className="flex flex-col items-center gap-y-4 md:items-start">
+    <footer className="grid place-items-center w-full py-8">
+      <Container className="flex flex-col gap-y-8 md:flex-row md:justify-between">
+        <div className="flex flex-col gap-y-4 pb-8">
+          <h2 className="text-md">Sidan drivs av</h2>
+          <ol className="flex flex-col gap-y-2">
             {sourceCode.map((project) => (
               <li key={project}>
                 <a
                   href={`https://github.com/${project}`}
-                  className="text-blue-600 underline"
+                  className="text-blue-600 underline text-sm"
                 >
                   {project.split("/").join(" / ")}
                 </a>
@@ -39,12 +39,12 @@ export const Footer: FC<{ sourceCode: string[] }> = ({ sourceCode }) => {
             ))}
           </ol>
         </div>
-        <div className="text-center flex flex-col items-center gap-y-4 md:items-start">
-          <h2 className="text-lg">Arbetsmarknadsdokumentation</h2>
-          <ol className="flex flex-col items-center gap-y-4 md:items-start">
+        <div className="flex flex-col gap-y-4">
+          <h2 className="text-md">Arbetsmarknadsdokumentation</h2>
+          <ol className="flex flex-col gap-y-2">
             {links.map((link) => (
               <li key={link.href}>
-                <a href={link.href} className="text-blue-600 underline">
+                <a href={link.href} className="text-blue-600 underline text-sm">
                   {link.text}
                 </a>
               </li>

@@ -3,13 +3,23 @@ import { Slot } from "@radix-ui/react-slot";
 import { ChevronRight, MoreHorizontal } from "lucide-react";
 
 import { cn } from "./utils";
+import { Container } from "./Container";
 
 const Breadcrumb = React.forwardRef<
   HTMLElement,
   React.ComponentPropsWithoutRef<"nav"> & {
     separator?: React.ReactNode;
   }
->(({ ...props }, ref) => <nav ref={ref} aria-label="breadcrumb" {...props} />);
+>(({ children, className, ...props }, ref) => (
+  <nav
+    ref={ref}
+    aria-label="breadcrumb"
+    className={cn("h-16 w-full flex justify-center", className)}
+    {...props}
+  >
+    <Container className="h-full flex justify-center">{children}</Container>
+  </nav>
+));
 Breadcrumb.displayName = "Breadcrumb";
 
 const BreadcrumbList = React.forwardRef<
@@ -20,7 +30,7 @@ const BreadcrumbList = React.forwardRef<
     ref={ref}
     className={cn(
       "flex flex-wrap items-center gap-1.5 break-words text-sm text-muted-foreground sm:gap-2.5",
-      className
+      className,
     )}
     {...props}
   />
@@ -50,7 +60,7 @@ const BreadcrumbLink = React.forwardRef<
   return (
     <Comp
       ref={ref}
-      className={cn("transition-colors hover:text-foreground", className)}
+      className={cn("text-blue-600 underline", className)}
       {...props}
     />
   );

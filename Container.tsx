@@ -1,8 +1,7 @@
-import type { FC, ReactElement } from "react";
+import type { FC, ReactElement, PropsWithChildren } from "react";
 import { cn } from "./utils";
 
-export type ContainerProps = {
-  children: ReactElement | ReactElement[];
+export type ContainerProps = PropsWithChildren & {
   className?: string;
 };
 
