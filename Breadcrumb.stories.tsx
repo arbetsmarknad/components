@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Breadcrumb,
+  Breadcrumbs,
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
@@ -52,4 +53,13 @@ export const VeryLongText = () => (
       </BreadcrumbItem>
     </BreadcrumbList>
   </Breadcrumb>
+);
+
+export const QuickBreadcrumbs = () => (
+  <Breadcrumbs>
+    {{
+      "/": "Home",
+      "/example": "Example",
+    }}
+  </Breadcrumbs>
 );

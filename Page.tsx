@@ -1,8 +1,6 @@
-import type { FC, ReactElement } from "react";
+import type { FC, PropsWithChildren } from "react";
 
-export type PageProps = {
-  children: ReactElement | ReactElement[];
-};
+export type PageProps = PropsWithChildren;
 
 export const Page: FC<PageProps> = ({ children }) => {
   return (

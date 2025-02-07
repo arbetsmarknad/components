@@ -5,6 +5,25 @@ import { ChevronRight, MoreHorizontal } from "lucide-react";
 import { cn } from "./utils";
 import { Container } from "./Container";
 
+type BreadcrumbsProps = {
+  children: Record<string, string>;
+};
+
+const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ children }) => (
+  <Breadcrumb>
+    <BreadcrumbList>
+      {Object.entries(children).map(([href, text], i) => (
+        <React.Fragment key={href}>
+          <BreadcrumbItem>
+            <BreadcrumbLink href={href}>{text}</BreadcrumbLink>
+          </BreadcrumbItem>
+          {i < Object.entries(children).length - 1 && <BreadcrumbSeparator />}
+        </React.Fragment>
+      ))}
+    </BreadcrumbList>
+  </Breadcrumb>
+);
+
 const Breadcrumb = React.forwardRef<
   HTMLElement,
   React.ComponentPropsWithoutRef<"nav"> & {
@@ -116,6 +135,7 @@ BreadcrumbEllipsis.displayName = "BreadcrumbElipssis";
 
 export {
   Breadcrumb,
+  Breadcrumbs,
   BreadcrumbList,
   BreadcrumbItem,
   BreadcrumbLink,
