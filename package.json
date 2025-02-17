@@ -20,10 +20,10 @@
     "vite": "^6.0.11"
   },
   "files": [
+    "*.css",
     "*.d.ts",
     "*.js",
-    "*.js.map",
-    "dist.css"
+    "*.js.map"
   ],
   "license": "MIT",
   "name": "@arbetsmarknad/components",
@@ -48,7 +48,7 @@
     "start:tailwind": "tailwindcss -i tailwind.css -o dist.css -w"
   },
   "type": "module",
-  "version": "0.0.26",
+  "version": "0.0.27",
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",
     "class-variance-authority": "^0.7.1",
