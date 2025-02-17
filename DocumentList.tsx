@@ -27,7 +27,7 @@ export const DocumentItem: FC<DocumentItemProps> = ({
     <li
       className={cn(
         "grid group relative xxs:grid-cols-[64px_auto] xxs:grid-rows-[min-content_1fr]  xs:grid-rows-[1fr_1fr] xxs:gap-x-4 xxs:items-center",
-        className
+        className,
       )}
     >
       {children}
@@ -45,7 +45,7 @@ export const DocumentIcon: FC<DocumentIconProps> = ({ src, className }) => {
     <div
       className={cn(
         "aspect-[707/1000] w-16 shrink-0 border-2 border-slate-200 xxs:row-span-2 group-hover:ring-2 ring-blue-200 ring-offset-1",
-        className
+        className,
       )}
     >
       <img alt="" src={src} />
@@ -74,8 +74,8 @@ export const DocumentLink: FC<DocumentLinkProps> = ({
       />
       <a
         className={cn(
-          "text-blue-600 underline font-bold xxs:col-start-2 xs:self-end",
-          className
+          "text-link underline font-bold xxs:col-start-2 xs:self-end",
+          className,
         )}
         href={href}
       >
@@ -98,7 +98,7 @@ export const DocumentDescription: FC<DocumentDescriptionProps> = ({
     <div
       className={cn(
         "xxs:col-start-2 xxs:self-start xxs:line-clamp-2 xs:line-clamp-none",
-        className
+        className,
       )}
     >
       {children}

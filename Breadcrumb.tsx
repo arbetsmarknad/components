@@ -79,7 +79,7 @@ const BreadcrumbLink = React.forwardRef<
   return (
     <Comp
       ref={ref}
-      className={cn("text-blue-600 underline", className)}
+      className={cn("text-link underline", className)}
       {...props}
     />
   );

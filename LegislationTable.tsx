@@ -70,11 +70,11 @@ export const LegislationTableCell: FC<LegislationTableCellProps> = ({
           "text-xs md:text-base lg:text-lg py-4 align-top":
             type === "paragraph_text",
         },
-        className
+        className,
       )}
     >
       {href ? (
-        <a href={href} className="text-blue-600 underline">
+        <a href={href} className="text-link underline">
           {children}
         </a>
       ) : (

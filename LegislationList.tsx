@@ -17,7 +17,7 @@ export const LegislationList: FC<LegislationListProps> = ({
     <ol
       className={cn(
         "grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8 lg:gap-y-16 max-w-xl lg:max-w-5xl",
-        className
+        className,
       )}
     >
       {children}
@@ -40,7 +40,7 @@ export const LegislationItem: FC<LegislationItemProps> = ({
     <li
       className={cn(
         "group grid grid-cols-[min-content_auto] grid-rows-[min-content_auto] gap-x-4 gap-y-1 relative w-full h-full",
-        className
+        className,
       )}
     >
       {children}
@@ -61,7 +61,7 @@ export const LegislationIcon: FC<LegislationIconProps> = ({
     <div
       className={cn(
         "col-span-0 row-span-2 left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600 p-3 group-hover:ring-2 ring-blue-600 ring-offset-1",
-        className
+        className,
       )}
     >
       {children}
@@ -89,10 +89,7 @@ export const LegislationLink: FC<LegislationLinkProps> = ({
         className="absolute inset-0"
         href={href}
       />
-      <a
-        className={cn("text-blue-600 font-bold underline", className)}
-        href={href}
-      >
+      <a className={cn("text-link font-bold underline", className)} href={href}>
         {children}
       </a>
     </>
