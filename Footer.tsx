@@ -31,7 +31,7 @@ export const Footer: FC<{ sourceCode: string[] }> = ({ sourceCode }) => {
               <li key={project}>
                 <a
                   href={`https://github.com/${project}`}
-                  className="text-blue-600 underline text-sm"
+                  className="text-link underline text-sm"
                 >
                   {project.split("/").join(" / ")}
                 </a>
@@ -44,7 +44,7 @@ export const Footer: FC<{ sourceCode: string[] }> = ({ sourceCode }) => {
           <ol className="flex flex-col gap-y-2">
             {links.map((link) => (
               <li key={link.href}>
-                <a href={link.href} className="text-blue-600 underline text-sm">
+                <a href={link.href} className="text-link underline text-sm">
                   {link.text}
                 </a>
               </li>
