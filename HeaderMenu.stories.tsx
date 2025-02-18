@@ -7,5 +7,15 @@ export default {
 };
 
 export const Default = () => (
-  <HeaderMenu href="https://example.com" text="Example" />
+  <HeaderMenu
+    canonicalUrl="https://example.org"
+    deploymentUrl="https://example.org"
+  />
+);
+
+export const Mirror = () => (
+  <HeaderMenu
+    canonicalUrl="https://example.org"
+    deploymentUrl="https://example.com"
+  />
 );

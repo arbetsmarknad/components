@@ -17,3 +17,9 @@
     --color-link: deepskyblue;
   }
 }
+
+body {
+  color: var(--color-foreground);
+  background: var(--color-background);
+  font-family: Arial, Helvetica, sans-serif;
+}
