@@ -30,7 +30,7 @@ export const Footer: FC<{ sourceCode: string[] }> = ({ sourceCode }) => {
             {sourceCode.map((project) => (
               <li key={project}>
                 <a
-                  href={`https://codeberg.page/${project}`}
+                  href={`https://codeberg.org/${project}`}
                   className="text-link underline text-sm"
                 >
                   {project.split("/").join(" / ")}
