@@ -25,7 +25,8 @@
     "*.js",
     "*.js.map"
   ],
-  "license": "MIT",
+  "homepage": "https://codeberg.org/arbetsmarknad/components",
+  "license": "CC-0",
   "name": "@arbetsmarknad/components",
   "peerDependencies": {
     "react": "^19.0.0",
