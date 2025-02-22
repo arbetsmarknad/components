@@ -3,19 +3,19 @@ import { Container } from "./Container";
 
 const links = [
   {
-    href: "https://arbetsmarknad.github.io/",
+    href: "https://arbetsmarknad.codeberg.page/",
     text: "Arbetsmarknad",
   },
   {
-    href: "https://arbetsmiljo.github.io/",
+    href: "https://arbetsmiljo.codeberg.page/",
     text: "Arbetsmiljö",
   },
   {
-    href: "https://kollektivavtal.github.io/",
+    href: "https://kollektivavtal.codeberg.page/",
     text: "Kollektivavtal",
   },
   {
-    href: "https://lagstiftning.github.io/",
+    href: "https://lagstiftning.codeberg.page/",
     text: "Lagstiftning",
   },
 ];
@@ -30,7 +30,7 @@ export const Footer: FC<{ sourceCode: string[] }> = ({ sourceCode }) => {
             {sourceCode.map((project) => (
               <li key={project}>
                 <a
-                  href={`https://github.com/${project}`}
+                  href={`https://codeberg.page/${project}`}
                   className="text-link underline text-sm"
                 >
                   {project.split("/").join(" / ")}
