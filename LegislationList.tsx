@@ -81,18 +81,10 @@ export const LegislationLink: FC<LegislationLinkProps> = ({
   href,
 }) => {
   return (
-    <>
-      <a
-        aria-label={children}
-        aria-hidden
-        tabIndex={-1}
-        className="absolute inset-0"
-        href={href}
-      />
-      <a className={cn("text-link font-bold underline", className)} href={href}>
-        {children}
-      </a>
-    </>
+    <a className={cn("text-link font-bold underline", className)} href={href}>
+      <span className="absolute inset-0" />
+      {children}
+    </a>
   );
 };
 
