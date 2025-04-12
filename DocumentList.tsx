@@ -65,23 +65,16 @@ export const DocumentLink: FC<DocumentLinkProps> = ({
   children,
 }) => {
   return (
-    <>
-      <a
-        aria-hidden
-        tabIndex={-1}
-        className="absolute top-0 right-0 bottom-0 left-0"
-        href={href}
-      />
-      <a
-        className={cn(
-          "text-link underline font-bold xxs:col-start-2 xs:self-end",
-          className,
-        )}
-        href={href}
-      >
-        {children}
-      </a>
-    </>
+    <a
+      className={cn(
+        "text-link underline font-bold xxs:col-start-2 xs:self-end",
+        className,
+      )}
+      href={href}
+    >
+      <span className="absolute inset-0" />
+      {children}
+    </a>
   );
 };
 
