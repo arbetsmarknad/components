@@ -1,6 +1,6 @@
 # components
 
-Component library for Arbetsmarknad web projects.
+React component library for arbetsmarknad-related web content
 
 The latest Storybook build is available at [arbetsmarknad.github.io/components](https://arbetsmarknad.github.io/components/).
 
