@@ -1,5 +1,5 @@
 {
-  "author": "Henry Catalini Smith <henry@catalinismith.com>",
+  "author": "Henry Catalini Smith <henry@catalinismith.se>",
   "description": "Component library for Arbetsmarknad web projects",
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.4",
