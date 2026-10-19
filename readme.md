@@ -4,7 +4,7 @@ Component library for Arbetsmarknad web projects.
 
 The latest Storybook build is available at [arbetsmarknad.github.io/components](https://arbetsmarknad.github.io/components/).
 
-Used by:
+## Dependents
 
 - [arbetsmarknad/arbetsmarknad.github.io](https://github.com/arbetsmarknad/arbetsmarknad.github.io)
 - [arbetsmarknad/next](https://github.com/arbetsmarknad/next)
