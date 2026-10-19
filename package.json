@@ -1,6 +1,6 @@
 {
   "author": "Henry Catalini Smith <henry@catalinismith.se>",
-  "description": "Component library for Arbetsmarknad web projects",
+  "description": "Component library for Svenska modellen web projects",
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.4",
     "@storybook/addon-essentials": "8.6.0-alpha.1",
@@ -25,9 +25,9 @@
     "*.js",
     "*.js.map"
   ],
-  "homepage": "https://github.com/arbetsmarknad/components",
+  "homepage": "https://github.com/svenskamodellen/components",
   "license": "CC0-1.0",
-  "name": "@arbetsmarknad/components",
+  "name": "@svenskamodellen/components",
   "peerDependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

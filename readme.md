@@ -1,14 +1,14 @@
 # components
 
-React component library for arbetsmarknad-related web content
+React component library for Svenska modellen-related web content
 
-The latest Storybook build is available at [arbetsmarknad.github.io/components](https://arbetsmarknad.github.io/components/).
+The latest Storybook build is available at [svenskamodellen.github.io/components](https://svenskamodellen.github.io/components/).
 
 ## Dependents
 
-- [arbetsmarknad/arbetsmarknad.github.io](https://github.com/arbetsmarknad/arbetsmarknad.github.io)
-- [arbetsmarknad/next](https://github.com/arbetsmarknad/next)
-- [arbetsmiljo/arbetsmarknad.github.io](https://github.com/arbetsmiljo/arbetsmiljo.github.io)
+- [svenskamodellen/svenskamodellen.github.io](https://github.com/svenskamodellen/svenskamodellen.github.io)
+- [svenskamodellen/next](https://github.com/svenskamodellen/next)
+- [arbetsmiljo/arbetsmiljo.github.io](https://github.com/arbetsmiljo/arbetsmiljo.github.io)
 - [arbetsmiljo/autoindex](https://github.com/arbetsmiljo/autoindex)
 - [kollektivavtal/kollektivavtal.github.io](https://github.com/kollektivavtal/kollektivavtal.github.io)
 - [kollektivavtal/autoindex](https://github.com/kollektivavtal/autoindex)
@@ -17,4 +17,4 @@ The latest Storybook build is available at [arbetsmarknad.github.io/components](
 
 ## License
 
-[CC-0](https://github.com/arbetsmarknad/components/blob/main/license)
+[CC-0](https://github.com/svenskamodellen/components/blob/main/license)

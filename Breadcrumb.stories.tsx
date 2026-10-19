@@ -35,7 +35,7 @@ export const VeryLongText = () => (
   <Breadcrumb>
     <BreadcrumbList>
       <BreadcrumbItem>
-        <BreadcrumbLink href="/">Arbetsmarknad</BreadcrumbLink>
+        <BreadcrumbLink href="/">Svenska modellen</BreadcrumbLink>
       </BreadcrumbItem>
       <BreadcrumbSeparator />
       <BreadcrumbItem>

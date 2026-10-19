@@ -8,14 +8,14 @@ export default {
 
 export const Default = () => (
   <TopLevelHeading
-    text="Arbetsmarknad Starter Project"
+    text="Svenska modellen Starter Project"
     subtext="Another Bit Of Text"
   />
 );
 
 export const VeryLongSubText = () => (
   <TopLevelHeading
-    text="Arbetsmarknad Starter Project"
+    text="Svenska modellen Starter Project"
     subtext="Ett dokumentationsnav om den svenska arbetmarknaden"
   />
 );

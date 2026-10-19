@@ -6,5 +6,5 @@ export default {
 };
 
 export const Default = () => (
-  <Footer sourceCode={["arbetsmarknad/components"]} />
+  <Footer sourceCode={["svenskamodellen/components"]} />
 );

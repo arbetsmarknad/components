@@ -3,8 +3,8 @@ import { Container } from "./Container";
 
 const links = [
   {
-    href: "https://arbetsmarknad.github.io/",
-    text: "Arbetsmarknad",
+    href: "https://svenskamodellen.github.io/",
+    text: "Svenska modellen",
   },
   {
     href: "https://arbetsmiljo.github.io/",
@@ -40,7 +40,7 @@ export const Footer: FC<{ sourceCode: string[] }> = ({ sourceCode }) => {
           </ol>
         </div>
         <div className="flex flex-col gap-y-4">
-          <h2 className="text-md">Arbetsmarknadsdokumentation</h2>
+          <h2 className="text-md">Dokumentation</h2>
           <ol className="flex flex-col gap-y-2">
             {links.map((link) => (
               <li key={link.href}>
