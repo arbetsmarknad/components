@@ -15,10 +15,10 @@ export const TopLevelHeading: FC<TopLevelHeadingProps> = ({
   const Text = h1 === "both" ? "span" : "h1";
   const Subtext = "span";
   return (
-    <Root className={`flex flex-col text-2xl font-bold md:text-3xl`}>
-      <Text className="font-normal md:font-extralight">{text}</Text>
+    <Root className={`flex flex-col font-serif text-2xl md:text-3xl`}>
+      <Text className="font-bold italic leading-none">{text}</Text>
       {subtext && (
-        <Subtext className="align-top text-lg font-light text-slate-500">
+        <Subtext className="align-top font-lilex font-normal text-sm text-slate-500 dark:text-slate-400">
           {subtext}
         </Subtext>
       )}

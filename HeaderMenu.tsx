@@ -16,7 +16,7 @@ export const HeaderMenu: FC<HeaderMenuProps> = ({
       <div className="flex h-full w-full max-w-5xl flex-col justify-center">
         <a
           href={deploymentUrl}
-          className="flex flex-row items-center text-md font-bold text-link underline"
+          className="flex flex-row items-center text-md font-light font-lilex text-link underline font-plex"
         >
           {deploymentHostname}
         </a>

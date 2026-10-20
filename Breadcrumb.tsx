@@ -33,7 +33,7 @@ const Breadcrumb = React.forwardRef<
   <nav
     ref={ref}
     aria-label="breadcrumb"
-    className={cn("h-16 w-full flex justify-center", className)}
+    className={cn("min-h-16 w-full flex justify-center items-center", className)}
     {...props}
   >
     <Container className="h-full flex justify-center">{children}</Container>
@@ -48,7 +48,7 @@ const BreadcrumbList = React.forwardRef<
   <ol
     ref={ref}
     className={cn(
-      "flex flex-wrap items-center gap-1.5 break-words text-sm text-muted-foreground sm:gap-2.5",
+      "flex flex-wrap items-center gap-1.5 break-words font-lilex text-sm text-muted-foreground sm:gap-2.5",
       className,
     )}
     {...props}

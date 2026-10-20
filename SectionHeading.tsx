@@ -14,7 +14,7 @@ export const SectionHeading: FC<SectionHeadingProps> = ({
 }) => {
   const Component = asChild ? "div" : "section";
   return (
-    <Component className={cn("text-2xl font-bold", className)}>
+    <Component className={cn("text-2xl lg:text-3xl font-bold font-serif", className)}>
       {children}
     </Component>
   );
