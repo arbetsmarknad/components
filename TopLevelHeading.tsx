@@ -18,7 +18,7 @@ export const TopLevelHeading: FC<TopLevelHeadingProps> = ({
     <Root className={`flex flex-col font-serif text-2xl md:text-3xl`}>
       <Text className="font-bold italic leading-none">{text}</Text>
       {subtext && (
-        <Subtext className="align-top font-lilex font-normal text-sm text-slate-500 dark:text-slate-400">
+        <Subtext className="align-top body-text text-slate-500 dark:text-slate-400">
           {subtext}
         </Subtext>
       )}

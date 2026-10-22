@@ -31,7 +31,23 @@ body {
   font-family: var(--font-lilex);
   font-optical-sizing: auto;
   font-size: 0.875rem;
+  /*font-weight: 400;*/
   line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.section-heading {
+  font-family: var(--font-serif);
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .section-heading {
+    font-size: 1.875rem; /* lg:text-3xl */
+    line-height: 2.25rem;
+  }
 }
 
 h1,
