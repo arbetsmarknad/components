@@ -3,12 +3,12 @@ import { Container } from "./Container";
 
 const links = [
   {
-    href: "https://svenskamodellen.github.io/",
-    text: "Svenska modellen",
-  },
-  {
     href: "https://arbetsmiljo.github.io/",
     text: "Arbetsmiljö",
+  },
+  {
+    href: "https://fackforbund.github.io/",
+    text: "Fackförbund",
   },
   {
     href: "https://kollektivavtal.github.io/",
@@ -25,7 +25,7 @@ export const Footer: FC<{ sourceCode: string[] }> = ({ sourceCode }) => {
     <footer className="grid place-items-center w-full py-8">
       <Container className="flex flex-col gap-y-8 md:flex-row md:gap-x-8">
         <div className="flex flex-1 flex-col gap-y-2">
-          <h2 className="text-lg font-serif">Dokumentation</h2>
+          <h2 className="text-lg font-serif">Svenska Modellen</h2>
           <ol className="flex flex-col gap-y-1">
             {links.map((link) => (
               <li key={link.href}>
