@@ -1,0 +1,1 @@
+import{j as o}from"./jsx-runtime-CLpGMVip.js";import{c as r}from"./utils-CytzSlOG.js";const a=({children:e,className:s})=>o.jsx("div",{className:r("flex w-full max-w-5xl flex-col px-4 lg:px-0",s),children:e});a.__docgenInfo={description:"",methods:[],displayName:"Container",props:{className:{required:!1,tsType:{name:"string"},description:""}}};export{a as C};
